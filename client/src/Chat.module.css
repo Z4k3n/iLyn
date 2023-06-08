@@ -1,0 +1,230 @@
+/* Estilos para el cuerpo del chat */
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Estilos para la barra de navegación */
+.chat-header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 20px;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.chat-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.chat-container {
+  display: flex;
+  align-items: center;
+}
+
+.chat-logo img {
+  width: 60px;
+}
+
+.chat-title {
+  color: #333;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#logout {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estilos para la sección principal */
+.chat-main {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.chat-card {
+  width: 25%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 20px;
+  height: fit-content;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px;
+  height: 65vh;
+  border-radius: 20px;
+}
+
+/* Estilos para la lista de tareas pendientes */
+.chat-header-task {
+  margin-top: 0;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilos para los botones de la tarjeta */
+.chat-card button {
+  margin-right: 10px;
+}
+
+/* Estilos para el encabezado del chat */
+.chat-header2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-header2 h2 {
+  margin: 0;
+}
+
+/* Estilos para los mensajes del chat */
+.chat-messages {
+  margin-top: 20px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para la entrada de mensajes */
+.chat-input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button#microphone-button,
+button#send-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button#reset {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-task-form {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.add-task-form h3 {
+  margin-top: 0;
+}
+
+.add-task-form input,
+.add-task-form textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  resize: none;
+}
+
+.add-task-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-task-form button {
+  margin-top: 10px;
+}
+
+.chat-input input[type="text"] {
+  font-size: 15px;
+  padding: 8px;
+  width: 100%;
+}
+
+/* Estilos para los mensajes del usuario */
+.user-message {
+  background-color: #2196f3; /* Color de fondo para los mensajes del usuario */
+  color: #fff; /* Color de texto para los mensajes del usuario */
+  text-align: left; /* Alineación a la derecha para los mensajes del usuario */
+  border-radius: 10px; /* Bordes redondeados para los mensajes del usuario */
+  padding: 10px; /* Espaciado interno para los mensajes del usuario */
+  margin-bottom: 10px; /* Margen inferior para separar los mensajes del usuario */
+  width: 80%;
+  margin-left: 20px;
+}
+
+/* Estilos para los mensajes de la AI */
+.ai-message {
+  background-color: purple; /* Color de fondo para los mensajes de la AI */
+  color: #fff; /* Color de texto para los mensajes de la AI */
+  text-align: left; /* Alineación a la izquierda para los mensajes de la AI */
+  border-radius: 10px; /* Bordes redondeados para los mensajes de la AI */
+  padding: 10px; /* Espaciado interno para los mensajes de la AI */
+  margin-bottom: 10px; /* Margen inferior para separar los mensajes de la AI */
+  width: 80%;
+}
+
+.ai-username {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.message-body p{
+  font-size: 20px;
+}
+
+/* Estilos dentro de la media query para vista móvil */
+@media (max-width: 767px) {
+  .chat-main {
+    flex-direction: column-reverse;
+  }
+
+  .chat-card {
+    width: 90%;
+    margin-top: 0;
+    order: 2;
+  }
+
+  .chat {
+    width: 90%;
+    margin-top: 20px;
+    order: 1;
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "howdy"
+      ],
+      "responses": [
+        "Hello!",
+        "Hi!",
+        "Hey there!"
+      ]
+    },
+    {
+      "tag": "exit",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "take care"
+      ],
+      "responses": [
+        "Goodbye!",
+        "See you later!",
+        "Take care!"
+      ]
+    },
+    {
+      "tag": "get_weather",
+      "patterns": [
+        "What's the weather like in [location]?",
+        "Tell me the weather in [location].",
+        "How's the weather in [location]?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "search_youtube",
+      "patterns": [
+        "Search a video about *",
+        "Find a video of *",
+        "Look up a video about *",
+        "Search on YouTube for *"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "search_wikipedia",
+      "patterns": [
+        "Search on Wikipedia for *",
+        "Find information about *",
+        "Look up * on Wikipedia",
+        "What is * according to Wikipedia",
+        "Who was * according to Wikipedia"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "get_datetime",
+      "patterns": [
+        "What's the date today?",
+        "What day is it?",
+        "What's the current time?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "create_task",
+      "patterns": [
+        "Remind me to *",
+        "Create a task to *",
+        "Add a task to *",
+        "I have to *",
+        "I need to *"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Thanks a lot",
+        "I appreciate it",
+        "Thank you so much",
+        "Thanks for your help"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "Glad I could help!",
+        "Anytime!",
+        "I'm here to assist you!",
+        "You're welcome. Let me know if there's anything else I can help with!",
+        "No worries. If you have any more questions, feel free to ask!"
+      ]
+    },
+    {
+      "tag": "get_suggestion",
+      "patterns": [
+        "Any suggestions?",
+        "I need some ideas",
+        "What tasks can I work on?",
+        "Give me a suggestion"
+      ],
+      "responses": []
+    }
+  ]
+}

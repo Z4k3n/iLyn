@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: purple;
+  height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); 
+}
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  color: #333;
+  font-size: 20px;
+  height: fit-content;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 10px;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: .2s ease-in-out;
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+  margin: 1em;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+}
+
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  width: 100%;
+  font-size: 18px;
+  padding: 0.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .2s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button1:hover {
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+}
+
+
+.button3 {
+  font-size: 18px;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .2s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button3:hover {
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar {
+  min-width: 400px;
+  margin-top: 80px;
+  position: fixed;
+  top: 0;
+  width: 30%;
+  z-index: 100;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+}
+
+header > nav > div > a {
+  margin-right: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+header > nav > div > a:hover {
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+header > nav > div > div{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}

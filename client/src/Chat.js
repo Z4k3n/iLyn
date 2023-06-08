@@ -498,7 +498,7 @@ function Chat() {
           <div className={styles['chat-input']}>
             <input
               type="text"
-              placeholder="Escribe tu mensaje aquí..."
+              placeholder="Write your message..."
               value={userMessage}
               onChange={handleUserMessageChange}
               onKeyPress={handleKeyPress}
@@ -506,7 +506,7 @@ function Chat() {
               autoFocus
             />
             <button id="send-button" onClick={handleSendMessage}>
-              Enviar
+              Send
             </button>
           </div>
         </div>

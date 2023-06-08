@@ -30,42 +30,43 @@ function Register() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const usernameRegex = /^[a-zA-Z0-9_]+$/;
     const passwordRegex = /^[a-zA-Z0-9]{6,}$/;
+    
+if (!nameRegex.test(name)) {
+  MySwal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'The name does not meet the requirements. It should only contain letters and spaces.',
+  });
+  return;
+}
 
-    if (!nameRegex.test(name)) {
-      MySwal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'El nombre no cumple con los requisitos. Debe contener solo letras y espacios.',
-      });
-      return;
-    }
-  
-    if (!emailRegex.test(email)) {
-      MySwal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'El correo electrónico no cumple con los requisitos. Debe tener un formato válido.',
-      });
-      return;
-    }
-  
-    if (!usernameRegex.test(username)) {
-      MySwal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'El nombre de usuario no cumple con los requisitos. Debe contener solo letras, números y guiones bajos.',
-      });
-      return;
-    }
-  
-    if (!passwordRegex.test(password)) {
-      MySwal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'La contraseña no cumple con los requisitos. Debe tener al menos 6 caracteres y puede contener letras y números.',
-      });
-      return;
-    }
+if (!emailRegex.test(email)) {
+  MySwal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'The email does not meet the requirements. It should have a valid format.',
+  });
+  return;
+}
+
+if (!usernameRegex.test(username)) {
+  MySwal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'The username does not meet the requirements. It should only contain letters, numbers, and underscores.',
+  });
+  return;
+}
+
+if (!passwordRegex.test(password)) {
+  MySwal.fire({
+    icon: 'error',
+    title: 'Error',
+    text: 'The password does not meet the requirements. It should be at least 6 characters long and can contain letters and numbers.',
+  });
+  return;
+}
+
   
     // Si todos los campos son válidos, enviar la solicitud al servidor
     const data = {

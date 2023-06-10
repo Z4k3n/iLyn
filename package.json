@@ -2,13 +2,14 @@
   "name": "ilyn",
   "version": "1.0.0",
   "description": "PFC for DAW",
-  "main": "index.js",
+  "main": "/client/src/index.js",
   "scripts": {
     "client:install": "cd client && npm install",
     "client:build": "cd client && npm run build",
     "server:install": "cd server && npm install",
     "server:start": "cd server && npm start",
-    "start": "npm-run-all -p client:install server:install client:build server:start"
+    "client:start": "cd client && npm start",
+    "start": "npm-run-all -p client:start server:start"
   },
   "repository": {
     "type": "git",

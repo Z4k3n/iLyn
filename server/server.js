@@ -6,6 +6,12 @@ const app = express();
 
 let userIdChat = 0;
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://ilyn.herokuapp.com'); // Reemplaza "tudominio.com" con tu dominio real
+  next();
+});
+
+
 app.use(express.json());
 
 app.post('/login', (req, res) => {

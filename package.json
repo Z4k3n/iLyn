@@ -1,0 +1,30 @@
+{
+  "name": "ilyn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client:install": "cd client && npm install",
+    "client:build": "cd client && npm run build",
+    "server:install": "cd server && npm install",
+    "server:start": "cd server && npm start",
+    "start": "npm-run-all -p client:install server:install client:build server:start"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GmR08/iLyn.git"
+  },
+  "author": "GmR08",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GmR08/iLyn/issues"
+  },
+  "homepage": "https://github.com/GmR08/iLyn#readme"
+}

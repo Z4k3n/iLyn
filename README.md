@@ -1,13 +1,13 @@
-## ILyn, tu asistente virtual personal
+## ILyn, your personal virtual assistant
 
-Este fue mi **TFC en mi CFGS de DAW**, donde diseñé el siguiente proyecto, que paso a explicar ahora:
+This was my **TFC in my DAW CFGS**, where I designed the following project, which I will explain now:
 
-Esta es una aplicación creada en frontend usando React y se vale de Node.js para el apartado de backend.
+This is an application created in frontend using React and uses Node.js for the backend section.
 
-El core de la lógica y el funcionamiento de la aplicación se vale de Python, en concreto hace uso de las librerías NLP (Natural Language Processing) para poner en práctica los modelos de procesamiento natural del lenguaje en una aplicación.
+The core of the logic and the operation of the application uses Python, specifically it uses the NLP (Natural Language Processing) libraries to put into practice the natural processing models of the language in an application.
 
-Como aplicación web, lleva una base de datos en MySQL, que registra tanto los usuarios como sus tareas asociadas, para toda esta comunicación con el core en Python, Node.JS se vale de intérprete e intermediario entre la base de datos y el modelo NLP.
+As a web application, it carries a database in MySQL, which records both users and their associated tasks, for all this communication with the core in Python, Node.JS uses an interpreter and intermediary between the database and the NLP model.
 
-Para más información, se adjunta enlace a la presentación del proyecto.
+For more information, a link to the presentation of the project is attached. (is in Spanish due to my studies in Spain)
 
-https://www.canva.com/design/DAFluh3-PJw/taFCyouF7uF9xT5N4OSRVg/view?utm_content=DAFluh3-PJw&utm_campaign=designshare&utm_medium=link&utm_source=editor
+https://www.canva.com/design/DAFluh3-PJw/taFCyouF7uF9xT5N4OSRVg/view? utm_content=DAFluh3-PJw&utm_campaign=designshare&utm_medium=link&utm_source=editor

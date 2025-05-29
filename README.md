@@ -18,8 +18,7 @@
 - **Frontend**: React
 - **Backend**: Node.js
 - **NLP Engine**: Python
-- **Database**: [Specify if any, e.g., MongoDB, PostgreSQL]
-- **Others**: [List any other tools or libraries used, e.g., Express, Socket.io]
+- **Database**: MySQL
 
 ---
 
